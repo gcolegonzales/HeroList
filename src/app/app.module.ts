@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListComponent } from './list/list.component';
 import { GridComponent } from './grid/grid.component';
-import { HeroesService } from './services/heroes.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,7 @@ import { HeroesService } from './services/heroes.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [HeroesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

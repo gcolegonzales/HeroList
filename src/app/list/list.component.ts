@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { HeroesService } from '../services/heroes.service';
 
 @Component({
   selector: 'app-list',
@@ -10,8 +9,8 @@ import { HeroesService } from '../services/heroes.service';
 export class ListComponent implements OnInit {
   heroes: any;
 
-  constructor(private heroesService: HeroesService, private http: HttpClient) {
-    this.heroesService.getHeroes();
+  constructor(private http: HttpClient) {
+    
   }
 
   ngOnInit(): void {
