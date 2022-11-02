@@ -1,0 +1,7 @@
+<ul>
+    <li class="list-group-item d-flex" *ngFor="let hero of heroes">
+        <span class="id">#{{ hero.id }}</span>
+        <span class="name">{{ hero.name }}</span>
+        <span class="alias text-secondary pl-1">| Alias: {{ hero.biography['full-name'] ? hero.biography['full-name'] : 'N/A'}}</span>
+    </li>
+</ul>

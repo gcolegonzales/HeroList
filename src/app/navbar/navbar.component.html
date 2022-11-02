@@ -1,0 +1,8 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">HeroList</a>
+    <ul class="nav navbar-nav">
+        <li *ngFor="let link of navItems" class="nav-item">
+            <a class="nav-link" href="{{ link.linkUrl }}">{{ link.linkName }}</a>
+        </li>
+    </ul>
+</nav>
